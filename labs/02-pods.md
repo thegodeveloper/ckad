@@ -60,12 +60,11 @@ kubectl get pod pod1 -o jsonpath='{.spec.containers[0].name}'
 
 ```shell
 echo "kubectl get pod pod1 -o jsonpath='{.status.phase}'" > pod1-status-command.sh
-Running
 ```
 
 ```shell
 sh pod1-status-command.sh
-pod1-container
+Running
 ```
 
 ### Option 2
