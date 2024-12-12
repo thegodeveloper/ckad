@@ -81,5 +81,6 @@ Status:           Running
 ## Resources
 
 - [Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
+- [View and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
 
 </details>
