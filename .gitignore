@@ -1,3 +1,10 @@
 .idea
 
 **/metallb-ip-address-pool.yaml
+
+# Labs
+# Lab 1
+namespaces.txt
+# Lab 2
+2.yaml
+pod1-status-command.sh

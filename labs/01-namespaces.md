@@ -27,4 +27,9 @@ metallb-system       Active   4m20s
 k get ns > namespaces.txt
 ```
 
+## Resources
+
+- [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+- [View and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
+
 </details>

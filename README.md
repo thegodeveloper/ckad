@@ -9,10 +9,6 @@
 
 ```shell
 alias k=kubectl
-
-export do="--dry-run=client -o yaml"
-
-export now="--force --grace-period 0"
 ```
 
 ## Create the cluster
@@ -60,6 +56,11 @@ k8s-c1-control-plane   Ready    control-plane   3m39s   v1.31.2
 k8s-c1-worker          Ready    <none>          3m23s   v1.31.2
 k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 ```
+
+## Labs
+
+- [Namespaces - 1%](labs/01-namespaces.md)
+- [Pods - 2 %](labs/02-pods.md)
 
 ## Resources
 
