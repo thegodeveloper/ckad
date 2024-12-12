@@ -80,7 +80,7 @@ Status:           Running
 
 ## Resources
 
-- [Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
-- [View and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
+- <a href="https://kubernetes.io/docs/concepts/workloads/pods/" target="_blank">Pods</a>
+- <a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources" target="_blank">View and finding resources</a>
 
 </details>
