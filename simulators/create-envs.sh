@@ -78,4 +78,8 @@ docker exec -it k8s-c1-worker2 bash -c "echo '$INGRESS_LB_IP ckad.godeveloper.io
 # Lab 37
 kubectl apply -f yaml-definitions/37.yaml >/dev/null 2>&1 || true
 
+# Lab 3
+# Create the neptune namespace
+kubectl create namespace neptune >/dev/null 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

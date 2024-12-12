@@ -61,6 +61,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 
 - [Namespaces - 1%](labs/01-namespaces.md)
 - [Pods - 2 %](labs/02-pods.md)
+- [Jobs - 2%](labs/03-jobs.md)
 
 ## Resources
 
