@@ -5,6 +5,16 @@
 - Docker Desktop
 - Kind
 
+## Environment Configuration
+
+```shell
+alias k=kubectl
+
+export do="--dry-run=client -o yaml"
+
+export now="--force --grace-period 0"
+```
+
 ## Resources
 
 - [Kubernetes Documentation](https://kubernetes.io/docs)
