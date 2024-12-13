@@ -150,4 +150,8 @@ internal-issue-report-apache    mercury         1               2024-12-13 10:35
 internal-issue-report-apiv2     mercury         2               2024-12-13 10:26:26.022928089 -0500 -05 deployed        nginx-18.3.1    1.27.3
 ```
 
+## Resources
+
+- [Helm Cheat Sheet](https://helm.sh/docs/intro/cheatsheet/)
+
 </details>
