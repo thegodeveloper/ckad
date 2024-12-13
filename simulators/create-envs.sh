@@ -82,4 +82,17 @@ kubectl apply -f yaml-definitions/37.yaml >/dev/null 2>&1 || true
 # Create the neptune namespace
 kubectl create namespace neptune >/dev/null 2>&1 || true
 
+# Lab 4
+# Create the mercury namespace
+kubectl create namespace mercury >/dev/null 2>&1 || true
+# Add Bitnami repository
+helm repo add bitnami https://charts.bitnami.com/bitnami >/dev/null 2>&1 || true
+# Install Nginx Helm Chart internal-issue-report-apiv1
+helm -n mercury install internal-issue-report-apiv1 bitnami/nginx --version 18.2.4 >/dev/null 2>&1 || true
+# Install Nginx Helm Chart internal-issue-report-apiv2
+helm -n mercury install internal-issue-report-apiv2 bitnami/nginx --version 18.2.5 >/dev/null 2>&1 || true
+# Install Nginx Helm Chart internal-issue-report-apiv3 on pending-install state
+helm -n mercury install internal-issue-report-apiv3 bitnami/nginx --version 18.2.5 --set resources.requests.memory=10Ti --set resources.requests.cpu=1000 --wait --timeout 10s >/dev/null 2>&1 || true
+
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

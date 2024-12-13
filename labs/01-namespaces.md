@@ -12,14 +12,15 @@
 ```shell
 k get ns
 NAME                 STATUS   AGE
-default              Active   153m
-ingress-nginx        Active   152m
-kube-node-lease      Active   153m
-kube-public          Active   153m
-kube-system          Active   153m
-local-path-storage   Active   153m
-metallb-system       Active   153m
-neptune              Active   6s
+default              Active   43m
+ingress-nginx        Active   42m
+kube-node-lease      Active   43m
+kube-public          Active   43m
+kube-system          Active   43m
+local-path-storage   Active   43m
+mercury              Active   41m
+metallb-system       Active   42m
+neptune              Active   41m
 ```
 
 ### List all the namespaces into namespaces.txt file
