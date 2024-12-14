@@ -65,6 +65,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [Helm Management - 5%](labs/04-helm-management.md)
 - [ServiceAccount and Secret - 3%](labs/05-serviceaccount-and-secret.md)
 - [ReadinessProbe - 7%](labs/06-readinessprobe.md)
+- [Pods and Namespaces - 4%](labs/07-pods-and-namespaces.md)
 
 ## Resources
 

@@ -98,4 +98,7 @@ helm -n mercury install internal-issue-report-apiv3 bitnami/nginx --version 18.2
 kubectl -n neptune create serviceaccount neptune-sa-v2 >/dev/null 2>&1 || true
 kubectl -n neptune create secret generic neptune-sa-v2-token --type='kubernetes.io/service-account-token' --dry-run=client -o yaml | kubectl annotate --local -f - kubernetes.io/service-account.name=neptune-sa-v2 --dry-run=client -o yaml | kubectl apply -f - >/dev/null 2>&1 || true
 
+# Lab 7
+k apply -f yaml-definitions/webserver-sat.yaml >/dev/null 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

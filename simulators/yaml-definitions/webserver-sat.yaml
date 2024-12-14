@@ -1,0 +1,117 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: saturn
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-001
+  labels:
+    id: webserver-sat-001
+  name: webserver-sat-001
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-002
+  labels:
+    id: webserver-sat-002
+  name: webserver-sat-002
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-003
+  labels:
+    id: webserver-sat-003
+  name: webserver-sat-003
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-004
+  labels:
+    id: webserver-sat-004
+  name: webserver-sat-004
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-005
+  labels:
+    id: webserver-sat-005
+  name: webserver-sat-005
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System webserver-sat-006
+  labels:
+    id: webserver-sat-006
+  name: webserver-sat-006
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    description: this is the server for the E-Commerce System my-happy-shop
+  labels:
+    id: webserver-sat-007
+  name: webserver-sat-007
+  namespace: saturn
+spec:
+  containers:
+    - image: nginx:1.16.1-alpine
+      imagePullPolicy: IfNotPresent
+      name: webserver-sat
+  restartPolicy: Always
