@@ -2,7 +2,7 @@
 
 - Perform all the operations in the `mercury` *Namespace*.
 - Delete release `internal-issue-report-apiv1`.
-- Upgrade release `internal-issue-report-apiv2` to any newer version of chart bitnami/nginx available.
+- Upgrade release `internal-issue-report-apiv2` to any newer version available of chart bitnami/nginx.
 - Install a new release `internal-issue-report-apache` of chart `bitnami/apache`. The Deployment should have `2` replicas, set these via Helm-values during install.
 - There seems to be a broken release, it is on `failed` state. Find it and delete it.
 
@@ -47,7 +47,8 @@ bitnami         https://charts.bitnami.com/bitnami
 The release `internal-issue-report-apiv2` is on version `18.2.5` and the latest release in the repo is `18.3.1`.
 
 ```shell
-helm search repo bitnami/nginxNAME                                    CHART VERSION   APP VERSION     DESCRIPTION                                       
+helm search repo bitnami/nginx
+NAME                                    CHART VERSION   APP VERSION     DESCRIPTION                                       
 bitnami/nginx                           18.3.1          1.27.3          NGINX Open Source is a web server that can be a...
 bitnami/nginx-ingress-controller        11.6.0          1.11.3          NGINX Ingress Controller is an Ingress controll...
 bitnami/nginx-intel                     2.1.15          0.4.9           DEPRECATED NGINX Open Source for Intel is a lig...
