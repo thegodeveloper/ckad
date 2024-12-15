@@ -42,7 +42,7 @@ k -n saturn get pod -o yaml | grep my-happy-shop -A10
     - image: nginx:1.16.1-alpine
 ```
 
-We the output of that command probably the `webserver-sat-007` *Pod* is the one we are looking for.
+With the output of that command probably the `webserver-sat-007` *Pod* is the one we are looking for.
 
 ### Get the YAML definition of the webserver-sat-007 Pod
 
