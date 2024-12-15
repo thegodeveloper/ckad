@@ -79,7 +79,6 @@ docker exec -it k8s-c1-worker2 bash -c "echo '$INGRESS_LB_IP ckad.godeveloper.io
 kubectl apply -f yaml-definitions/37.yaml >/dev/null 2>&1 || true
 
 # Lab 3
-# Create the neptune namespace
 kubectl create namespace neptune >/dev/null 2>&1 || true
 
 # Lab 4
@@ -100,5 +99,10 @@ kubectl -n neptune create secret generic neptune-sa-v2-token --type='kubernetes.
 
 # Lab 7
 kubectl apply -f yaml-definitions/webserver-sat.yaml >/dev/null 2>&1 || true
+
+# Lab 8
+kubectl -n neptune create deployment api-new-c32 --image=nginx:1.26.2 >/dev/null 2>&1 || true
+kubectl -n neptune rollout history deployment/api-new-c32 >/dev/null 2>&1 || true
+kubectl -n neptune set image deployment/api-new-c32 nginx=nginx:1.27.2 --record >/dev/null 2>&1 || true
 
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
