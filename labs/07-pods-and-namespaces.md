@@ -1,6 +1,6 @@
 # Question 7 - Pods and Namespaces - 4%
 
-- There are a webserver installed on `saturn` *Namespace*, the only thing we know is the system is called `my-happy-shop`.
+- There are some webservers deployed on `saturn` *Namespace*, the only thing we know is the system is called `my-happy-shop`.
 - Search for the correct *Pod* in the `saturn` *Namespace* and move it to `neptune` *Namespace*.
 - It does not matter if you have to shut it down and spin it up again.
 
