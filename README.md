@@ -59,13 +59,13 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 
 ## Labs
 
-- [Namespaces - 1%](labs/01-namespaces.md)
-- [Pods - 2 %](labs/02-pods.md)
-- [Jobs - 2%](labs/03-jobs.md)
-- [Helm Management - 5%](labs/04-helm-management.md)
-- [ServiceAccount and Secret - 3%](labs/05-serviceaccount-and-secret.md)
-- [ReadinessProbe - 7%](labs/06-readinessprobe.md)
-- [Pods and Namespaces - 4%](labs/07-pods-and-namespaces.md)
+- [1. Namespaces - 1%](labs/01-namespaces.md)
+- [2. Pods - 2 %](labs/02-pods.md)
+- [3. Jobs - 2%](labs/03-jobs.md)
+- [4. Helm Management - 5%](labs/04-helm-management.md)
+- [5. ServiceAccount and Secret - 3%](labs/05-serviceaccount-and-secret.md)
+- [6. ReadinessProbe - 7%](labs/06-readinessprobe.md)
+- [7. Pods and Namespaces - 4%](labs/07-pods-and-namespaces.md)
 
 ## Resources
 
