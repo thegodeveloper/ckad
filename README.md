@@ -73,3 +73,4 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [Kubernetes Documentation](https://kubernetes.io/docs)
 - [Kodekloud](https://kodekloud.com)
 - [Certified Kubernetes Application Developer](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
+- [Killer Shell (CKAD) - Videos](https://www.youtube.com/playlist?list=PLpbwBK0ptssyIgAoHR-611wt3O9wobS8T)
