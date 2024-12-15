@@ -12,124 +12,74 @@
 ### List the Deployment
 
 ```shell
-k -n neptune get deployment api-new-c32
-NAME                READY   STATUS    RESTARTS   AGE
-webserver-sat-001   1/1     Running   0          9m18s
-webserver-sat-002   1/1     Running   0          9m18s
-webserver-sat-003   1/1     Running   0          9m18s
-webserver-sat-004   1/1     Running   0          9m18s
-webserver-sat-005   1/1     Running   0          9m18s
-webserver-sat-006   1/1     Running   0          9m18s
-webserver-sat-007   1/1     Running   0          9m18s
+k -n neptune get deploy api-new-c32
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+api-new-c32   0/3     1            0           71s
 ```
 
-### Get the YAML definition of all Pods and filter by `my-happy-shop`
+### List the Pods
 
 ```shell
-k -n saturn get pod -o yaml | grep my-happy-shop -A10
-      description: this is the server for the E-Commerce System my-happy-shop
-      kubectl.kubernetes.io/last-applied-configuration: |
-        {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{"description":"this is the server for the E-Commerce System my-happy-shop"},"labels":{"id":"webserver-sat-007"},"name":"webserver-sat-007","namespace":"saturn"},"spec":{"containers":[{"image":"nginx:1.16.1-alpine","imagePullPolicy":"IfNotPresent","name":"webserver-sat"}],"restartPolicy":"Always"}}
-    creationTimestamp: "2024-12-14T23:27:47Z"
-    labels:
-      id: webserver-sat-007
-    name: webserver-sat-007
-    namespace: saturn
-    resourceVersion: "24286"
-    uid: 59b6dfad-57f0-45dc-9678-a8835cb66cb8
-  spec:
-    containers:
-    - image: nginx:1.16.1-alpine
+NAME                           READY   STATUS             RESTARTS   AGE
+api-new-c32-5957d59bcb-s4w72   0/1     ImagePullBackOff   0          2m14s
+api-new-c32-6675746675-gs7p9   0/1     ImagePullBackOff   0          2m14s
+api-new-c32-6dcc55d47d-bk2tq   0/1     ImagePullBackOff   0          2m14s
+api-new-c32-c9cdb5f85-mgn2b    0/1     ImagePullBackOff   0          2m14s
 ```
 
-With the output of that command probably the `webserver-sat-007` *Pod* is the one we are looking for.
-
-### Get the YAML definition of the webserver-sat-007 Pod
+### Check Deployment History
 
 ```shell
-k -n saturn get pod webserver-sat-007 -o yaml > 7.yaml
+k -n neptune rollout history deployment/api-new-c32
+deployment.apps/api-new-c32 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.2 --namespace=neptune --record=true
+3         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.3 --namespace=neptune --record=true
+4         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.4 --namespace=neptune --record=true
+5         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.5 --namespace=neptune --record=true
 ```
 
-Looking at in the `annotations` there is a `description` with the following value:
-
-`this is the server for the E-Commerce System my-happy-shop`.
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  annotations:
-    cni.projectcalico.org/containerID: 19442f19b375e0db2edbd0aa6d711333d0d0745c4791caa4eae30000ca65637c
-    cni.projectcalico.org/podIP: 10.244.88.197/32
-    cni.projectcalico.org/podIPs: 10.244.88.197/32
-    description: this is the server for the E-Commerce System my-happy-shop
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{"description":"this is the server for the E-Commerce System my-happy-shop"},"labels":{"id":"webserver-sat-007"},"name":"webserver-sat-007","namespace":"saturn"},"spec":{"containers":[{"image":"nginx:1.16.1-alpine","imagePullPolicy":"IfNotPresent","name":"webserver-sat"}],"restartPolicy":"Always"}}
-  creationTimestamp: "2024-12-14T23:27:47Z"
-  labels:
-    id: webserver-sat-007
-  name: webserver-sat-007
-  namespace: saturn
-  resourceVersion: "24286"
-  uid: 59b6dfad-57f0-45dc-9678-a8835cb66cb8
-spec:
-  containers:
-  - image: nginx:1.16.1-alpine
-    imagePullPolicy: IfNotPresent
-    name: webserver-sat
-    resources: {}
-    terminationMessagePath: /dev/termination-log
-    terminationMessagePolicy: File
-    volumeMounts:
-    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-2ttrc
-      readOnly: true
-```
-
-### Change the namespace saturn to neptune in the YAML definition file
-
-- Remove from the `7.yaml` file the `uuid` lines.
-- Change `namespace: saturn` to `namespace: neptune`.
-- Remove the `status` block.
-- Save the file.
-
-### Delete the existing webserver-sat-007 from saturn Namespace
+### Rollback to Working Revision
 
 ```shell
-k -n saturn delete pod webserver-sat-007
-pod "webserver-sat-007" deleted
+k -n neptune rollout undo deployment/api-new-c32 --to-revision=1
+deployment.apps/api-new-c32 rolled back
 ```
 
-### Create the Pod webserver-sat-007 in neptune Namespace
+### Validate the Deployment
 
 ```shell
-k apply -f 7.yaml
-pod/webserver-sat-007 created
+k -n neptune get deploy api-new-c32
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+api-new-c32   3/3     3            3           8m46s
 ```
 
-### List the Pods in saturn Namespace
+### Validate Pods in the Deployment
+
+```shell
+k -n neptune get pods
+NAME                           READY   STATUS    RESTARTS   AGE
+api-new-c32-79b499db9f-drjff   1/1     Running   0          103s
+api-new-c32-79b499db9f-g9hgz   1/1     Running   0          105s
+api-new-c32-79b499db9f-w4ml7   1/1     Running   0          97s
+```
+
+### Validate Deployment History (not necessary)
 
 ````shell
-k -n saturn get pod
-NAME                READY   STATUS    RESTARTS   AGE
-webserver-sat-001   1/1     Running   0          26m
-webserver-sat-002   1/1     Running   0          26m
-webserver-sat-003   1/1     Running   0          26m
-webserver-sat-004   1/1     Running   0          26m
-webserver-sat-005   1/1     Running   0          26m
-webserver-sat-006   1/1     Running   0          26m
+k -n neptune rollout history deployment/api-new-c32
+deployment.apps/api-new-c32 
+REVISION  CHANGE-CAUSE
+2         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.2 --namespace=neptune --record=true
+3         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.3 --namespace=neptune --record=true
+4         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.4 --namespace=neptune --record=true
+5         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.5 --namespace=neptune --record=true
+6         <none>
 ````
-
-### List the Pods in neptune Namespace
-
-```shell
-k -n neptune get pod
-NAME                READY   STATUS    RESTARTS   AGE
-webserver-sat-007   1/1     Running   0          66s
-```
 
 ## Resources
 
-- [Viewing and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
+- [Update resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#updating-resources)
 
 </details>
