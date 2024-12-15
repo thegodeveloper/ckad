@@ -19,12 +19,15 @@ api-new-c32   0/3     1            0           71s
 
 ### List the Pods
 
+You could get something different.
+
 ```shell
+k -n neptune get pods
 NAME                           READY   STATUS             RESTARTS   AGE
-api-new-c32-5957d59bcb-s4w72   0/1     ImagePullBackOff   0          2m14s
-api-new-c32-6675746675-gs7p9   0/1     ImagePullBackOff   0          2m14s
-api-new-c32-6dcc55d47d-bk2tq   0/1     ImagePullBackOff   0          2m14s
-api-new-c32-c9cdb5f85-mgn2b    0/1     ImagePullBackOff   0          2m14s
+api-new-c32-5957d59bcb-mkgtb   0/1     ErrImagePull       0          64s
+api-new-c32-79b499db9f-jfbjr   1/1     Running            0          65s
+api-new-c32-79b499db9f-mmdtc   1/1     Running            0          65s
+api-new-c32-c9cdb5f85-lmchm    0/1     ImagePullBackOff   0          64s
 ```
 
 ### Check Deployment History
