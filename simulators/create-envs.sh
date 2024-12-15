@@ -108,4 +108,8 @@ kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.3 --record 
 kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.4 --record >/dev/null 2>&1 || true
 kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.5 --record >/dev/null 2>&1 || true
 
+# Lab 9
+kubectl create namespace pluto >/dev/null 2>&1 || true
+kubectl apply -f yaml-definitions/holy-api-pod.yaml >/dev/null 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
