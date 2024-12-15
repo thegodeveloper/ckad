@@ -1,4 +1,4 @@
-# Question 8 - Deployment and Rollouts - 4%
+# Question 8 - Deployments and Rollouts - 4%
 
 - There is an existing *Deployment* named `api-new-c32` in `neptune` *Namespace*.
 - An upgrade was made to the Deployment but the updated version never came online.

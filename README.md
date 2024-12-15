@@ -66,6 +66,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [5. ServiceAccount and Secret - 3%](labs/05-serviceaccount-and-secret.md)
 - [6. ReadinessProbe - 7%](labs/06-readinessprobe.md)
 - [7. Pods and Namespaces - 4%](labs/07-pods-and-namespaces.md)
+- [8. Deployments and Rollouts - 4%](labs/08-deployments-and-rollouts.md)
 
 ## Resources
 
