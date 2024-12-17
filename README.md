@@ -4,6 +4,7 @@
 
 - Docker Desktop
 - Kind
+- Podman
 
 ## Environment Configuration
 
@@ -69,6 +70,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [8. Deployments and Rollouts - 4%](labs/08-deployments-and-rollouts.md)
 - [9. Pod to Deployment - 5%](labs/09-pod-to-deployment.md)
 - [10. Services and Logs - 4%](labs/10-services-and-logs.md)
+- [11. Working with Containers - 7%](labs/11-working-with-containers.md) - In Progress
 
 ## Resources
 
@@ -76,3 +78,4 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [Kodekloud](https://kodekloud.com)
 - [Certified Kubernetes Application Developer](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
 - [Killer Shell (CKAD) - Videos](https://www.youtube.com/playlist?list=PLpbwBK0ptssyIgAoHR-611wt3O9wobS8T)
+- [How to install Podman in Arch Linux](https://computingforgeeks.com/how-to-install-podman-on-arch-linux-manjaro/)
