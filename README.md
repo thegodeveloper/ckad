@@ -3,8 +3,9 @@
 ## Requirements
 
 - Docker Desktop
-- Kind
-- Podman
+- Kind (brew)
+- Podman (brew)
+- podman-compose (brew)
 
 ## Environment Configuration
 

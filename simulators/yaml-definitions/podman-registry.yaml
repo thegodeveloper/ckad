@@ -1,0 +1,11 @@
+version: '2'
+services:
+  registry:
+    image: registry:2
+    container_name: podman-registry
+    ports:
+      - "5000:5000"
+    environment:
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /var/lib/registry
+    volumes:
+      - ./data:/var/lib/registry

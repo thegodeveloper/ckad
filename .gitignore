@@ -21,3 +21,7 @@ token.txt
 # Lab 10
 service_test.html
 service_test.log
+# Lab 11
+labs/11/image/Dockerfile
+**11-logs.txt
+**11-containers.txt
