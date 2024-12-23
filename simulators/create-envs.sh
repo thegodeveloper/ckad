@@ -112,7 +112,7 @@ kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.5 --record 
 kubectl create namespace pluto >/dev/null 2>&1 || true
 kubectl apply -f yaml-definitions/holy-api-pod.yaml >/dev/null 2>&1 || true
 
-# Lab 10
+# Lab 11
 mkdir -p ~/podman-registry/data 2>&1 || true
 rm -rf ~/podman-registry/podman-registry.yaml 2>&1 || true
 rm -rf ~/.config/containers/registries.conf 2>&1 || true
@@ -121,6 +121,6 @@ podman-compose -f ~/podman-registry/podman-registry.yaml up -d 2>&1 || true
 mkdir -p ~/.config/containers 2>&1 || true
 cp -f yaml-definitions/registries.conf ~/.config/containers/registries.conf 2>&1 || true
 rm -rf ../labs/11/image/Dockerfile 2>&1 || true
-cp ./Dockerfiles/11-Dockerfile ../labs/11/image/Dockerfile 2>&1 || true
+cp ./dockerfiles/11-Dockerfile ../labs/11/image/Dockerfile 2>&1 || true
 
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
