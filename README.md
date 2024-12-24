@@ -74,6 +74,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [11. Working with Containers - 7%](labs/11-working-with-containers.md)
 - [12. Storage, PV, PVC, and Pod Volume - 8%](labs/12-storage-pv-pvc-pod-volume.md)
 - [13. Storage, StorageClass, PVC - 6%](labs/13-storage-storageclass-pvc.md)
+- [14. Secret, SecretVolume and Secret-Env - 4%](labs/14-secret-secretvolume-secret-env.md)
 
 ## Resources
 
