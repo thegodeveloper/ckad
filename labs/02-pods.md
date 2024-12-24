@@ -90,3 +90,10 @@ Status:           Running
   <a href="01-namespaces.md" style="text-align: left;">&larr; Prev</a>
   <a href="03-jobs.md" style="text-align: right;">Next &rarr;</a>
 </div>
+
+<table width="100%">
+  <tr>
+    <td align="left"><a href="01-namespaces.md">&larr; Prev</a></td>
+    <td align="right"><a href="03-jobs.md">Next &rarr;</a></td>
+  </tr>
+</table>
