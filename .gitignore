@@ -29,3 +29,7 @@ labs/11/image/Dockerfile
 12-pv.yaml
 12-pvc.yaml
 12-deploy.yaml
+# Lab 13
+13-reason.txt
+13-sc.yaml
+13-pvc.yaml
