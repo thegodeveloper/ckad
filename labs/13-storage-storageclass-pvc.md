@@ -13,7 +13,7 @@
 
 ### Create the StorageClass
 
-- Go to Kubernetes documentation an search `StorageClass`.
+- Go to Kubernetes documentation an search for `StorageClass`.
 - Select the first link `Storage Class | Kubernetes`.
 - Go to `StorageClass objects` and copy the YAML definition until `reclaimPolicy`.
 - Set the `name` to `moon-retain`.
