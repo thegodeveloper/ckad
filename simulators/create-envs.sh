@@ -123,4 +123,7 @@ cp -f yaml-definitions/registries.conf ~/.config/containers/registries.conf 2>&1
 rm -rf ../labs/11/image/Dockerfile 2>&1 || true
 cp ./dockerfiles/11-Dockerfile ../labs/11/image/Dockerfile 2>&1 || true
 
+# Lab 12
+kubectl create namespace earth 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

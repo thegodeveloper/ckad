@@ -25,3 +25,7 @@ service_test.log
 labs/11/image/Dockerfile
 **11-logs.txt
 **11-containers.txt
+# Lab 12
+12-pv.yaml
+12-pvc.yaml
+12-deploy.yaml
