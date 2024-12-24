@@ -33,3 +33,5 @@ labs/11/image/Dockerfile
 13-reason.txt
 13-sc.yaml
 13-pvc.yaml
+# Lab 14
+secret-handler-new.yaml
