@@ -34,7 +34,7 @@ spec:
     metadata:
       creationTimestamp: null # <-- remove this
       labels: # <-- add this
-        id: awesome-job <-- add this
+        id: awesome-job # <-- add this
     spec:
       containers:
         - command:
