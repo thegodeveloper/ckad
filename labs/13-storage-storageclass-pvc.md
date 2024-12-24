@@ -1,8 +1,8 @@
 # Question 13 - Storage, StorageClass, and PVC - 6%
 
-- Create a *StorageClas* named `moon-retain`, with the provisioner `moon-retainer` and `reclaimPolicy` as `Retain`.
+- Create a *StorageClass* named `moon-retain`, with the provisioner `moon-retainer` and `reclaimPolicy` as `Retain`.
 - Create a new *PersistentVolumeClaim* in *Namespace* `moon` named `moon-pvc-126`. 
-- It should request `3Gi` storage, *accessMode* `ReadWriteOnce` and should use the new *storageClass*.
+- It should request `3Gi` for storage, set the *accessMode* to `ReadWriteOnce` and it should use the new *storageClass*.
 - The *Provisioner* `moon-retainer` will be created by another team, so it's expected that the *PVC* will not boot yet.
 - Confirm this by writing the log message from the *PVC* into file `13-reason.txt`. 
 
@@ -34,7 +34,7 @@ Create the `13-sc.yaml` file.
 
 #### Apply the StorageClass YAML file
 
-```yaml
+```shell
 k apply -f 13-sc.yaml
 storageclass.storage.k8s.io/low-latency created
 ```
@@ -46,7 +46,7 @@ storageclass.storage.k8s.io/low-latency created
 - Go to `Create a PersistentVolumeClaim` section.
 - Copy the `PersistentVolumeClaim` YAML definition.
 - Change the `name` to `moon-pvc-126`.
-- Add the `namespace` and set it to `moon`.
+- Add the `namespace` set it to `moon`.
 - Set the `storageClassName` to `moon-retain`.
 
 ```yaml
