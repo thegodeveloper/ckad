@@ -28,12 +28,12 @@ metadata:
   name: nep-new-job
   namespace: neptune
 spec:
-  completions: 3 <-- add this
-  parallelism: 2 <-- add this
+  completions: 3 # <-- add this
+  parallelism: 2 # <-- add this
   template:
     metadata:
-      creationTimestamp: null <-- remove this
-      labels: <-- add this
+      creationTimestamp: null # <-- remove this
+      labels: # <-- add this
         id: awesome-job <-- add this
     spec:
       containers:
@@ -45,7 +45,7 @@ spec:
           name: nep-new-job-container <-- change this
           resources: {}
       restartPolicy: Never
-status: {} <-- remove this
+status: {} # <-- remove this
 ```
 
 Final YAML definition:
@@ -105,3 +105,9 @@ nep-new-job-container
 - [Creating objects](https://kubernetes.io/docs/reference/kubectl/quick-reference/#creating-objects)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="02-pods.md" style="text-align: left;">&larr; Prev</a>
+  <a href="04-helm-management.md" style="text-align: right;">Next &rarr;</a>
+</div>

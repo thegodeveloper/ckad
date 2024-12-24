@@ -87,3 +87,9 @@ k -n pluto logs project-plt-6cc-api > service_test.log
 - [Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="09-pod-to-deployment.md" style="text-align: left;">&larr; Prev</a>
+  <a href="11-working-with-containers.md" style="text-align: right;">Next &rarr;</a>
+</div>

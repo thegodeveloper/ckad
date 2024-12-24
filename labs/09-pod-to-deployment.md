@@ -147,3 +147,9 @@ pod/holy-api-54d4c8cd79-vvz75   1/1     Running   0          3m41s
 - [Set the security context for a Pod](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="08-deployments-and-rollouts.md" style="text-align: left;">&larr; Prev</a>
+  <a href="10-services-and-logs.md" style="text-align: right;">Next &rarr;</a>
+</div>

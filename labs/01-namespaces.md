@@ -35,3 +35,8 @@ k get ns > namespaces.txt
 - [View and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
 
 </details>
+
+<br>
+<div style="text-align: right;">
+  <a href="02-pods.md">Next &rarr;</a>
+</div>

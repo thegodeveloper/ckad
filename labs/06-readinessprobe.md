@@ -99,3 +99,9 @@ Readiness:      exec [sh -c cat /tmp/ready] delay=5s timeout=1s period=10s #succ
 - Use the liveness command example for readiness-probe configuration. Just change `livenessProbe` for `readinessProbe`.
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="05-serviceaccount-and-secret.md" style="text-align: left;">&larr; Prev</a>
+  <a href="07-pods-and-namespaces.md" style="text-align: right;">Next &rarr;</a>
+</div>

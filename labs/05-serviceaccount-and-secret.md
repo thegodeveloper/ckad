@@ -62,3 +62,9 @@ k -n neptune get secret neptune-sa-v2-token -o jsonpath='{.data.token}' | base64
 - [Managing Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="04-helm-management.md" style="text-align: left;">&larr; Prev</a>
+  <a href="06-readinessprobe.md" style="text-align: right;">Next &rarr;</a>
+</div>

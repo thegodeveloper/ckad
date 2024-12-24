@@ -86,3 +86,9 @@ REVISION  CHANGE-CAUSE
 - [Update resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#updating-resources)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="07-pods-and-namespaces.md" style="text-align: left;">&larr; Prev</a>
+  <a href="09-pod-to-deployment.md" style="text-align: right;">Next &rarr;</a>
+</div>

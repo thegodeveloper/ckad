@@ -133,3 +133,9 @@ webserver-sat-007   1/1     Running   0          66s
 - [Viewing and finding resources](https://kubernetes.io/docs/reference/kubectl/quick-reference/#viewing-and-finding-resources)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="06-readinessprobe.md" style="text-align: left;">&larr; Prev</a>
+  <a href="08-deployments-and-rollouts.md" style="text-align: right;">Next &rarr;</a>
+</div>

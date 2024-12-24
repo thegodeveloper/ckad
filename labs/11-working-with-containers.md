@@ -123,3 +123,9 @@ Container is now running. Press Ctrl+C to stop.
 - [Basic Setup and Use of Podman](https://github.com/containers/podman/blob/main/docs/tutorials/podman_tutorial.md)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="10-services-and-logs.md" style="text-align: left;">&larr; Prev</a>
+  <a href="12-storage-pv-pvc-pod-volume.md" style="text-align: right;">Next &rarr;</a>
+</div>

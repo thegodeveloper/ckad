@@ -156,3 +156,9 @@ internal-issue-report-apiv2     mercury         2               2024-12-13 10:26
 - [Helm Cheat Sheet](https://helm.sh/docs/intro/cheatsheet/)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="03-jobs.md" style="text-align: left;">&larr; Prev</a>
+  <a href="05-serviceaccount-and-secret.md" style="text-align: right;">Next &rarr;</a>
+</div>

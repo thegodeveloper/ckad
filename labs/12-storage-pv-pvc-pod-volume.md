@@ -187,3 +187,9 @@ k -n earth describe pod project-earthflower-8459866d9c-q5gpp | grep -A2 Mounts:
 - [Creatre a Pod](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-pod)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="11-working-with-containers.md" style="text-align: left;">&larr; Prev</a>
+  <a href="13-storage-storageclass-pvc.md" style="text-align: right;">Next &rarr;</a>
+</div>

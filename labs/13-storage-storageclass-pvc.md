@@ -99,3 +99,9 @@ echo 'Warning  ProvisioningFailed  12s (x8 over 116s)  persistentvolume-controll
 - [Create a PersistentVolumeClaim](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim)
 
 </details>
+
+<br>
+<div style="display: flex; justify-content: space-between;">
+  <a href="12-storage-pv-pvc-pod-volume.md" style="text-align: left;">&larr; Prev</a>
+  <a href="" style="text-align: right;">Next &rarr;</a>
+</div>
