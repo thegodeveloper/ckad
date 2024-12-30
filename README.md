@@ -76,6 +76,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [13. Storage, StorageClass, PVC - 6%](labs/13-storage-storageclass-pvc.md)
 - [14. Secret, SecretVolume and Secret-Env - 4%](labs/14-secret-secretvolume-secret-env.md)
 - [15. ConfigMap, ConfigMap-Volume - 5%](labs/15-configmap-configmap-volume.md)
+- [16. Logging Sidecar - 6%](labs/16-logging-sidecar.md)
 
 ## Resources
 

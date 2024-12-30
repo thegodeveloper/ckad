@@ -14,3 +14,5 @@
 - [12. Storage, PV, PVC, and Pod Volume - 8%](12-storage-pv-pvc-pod-volume.md)
 - [13. Storage, StorageClass, PVC - 6%](13-storage-storageclass-pvc.md)
 - [14. Secret, SecretVolume and Secret-Env - 4%](14-secret-secretvolume-secret-env.md)
+- [15. ConfigMap, ConfigMap-Volume - 5%](15-configmap-configmap-volume.md)
+- [16. Logging Sidecar - 6%](16-logging-sidecar.md)
