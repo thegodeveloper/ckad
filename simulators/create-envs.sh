@@ -132,4 +132,7 @@ kubectl create namespace moon 2>&1 || true
 # Lab 14
 kubectl apply -f yaml-definitions/secret-handler.yaml 2>&1 || true
 
+# Lab 15
+kubectl apply -f yaml-definitions/web-moon.yaml 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
