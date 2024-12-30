@@ -52,7 +52,6 @@ spec:
           name: nginx
           volumeMounts:
             - name: web-content
-
               mountPath: /usr/share/nginx/html
           ports:
             - containerPort: 80
