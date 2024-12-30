@@ -138,4 +138,7 @@ kubectl apply -f yaml-definitions/web-moon.yaml 2>&1 || true
 # Lab 16
 kubectl apply -f yaml-definitions/cleaner.yaml 2>&1 || true
 
+# Lab 17
+kubectl create namespace mars 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

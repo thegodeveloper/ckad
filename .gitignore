@@ -38,3 +38,5 @@ secret-handler-new.yaml
 # Lab 16
 cleaner-new.yaml
 cleaner.log
+# Lab 17
+17-test-init-container.yaml

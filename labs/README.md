@@ -16,3 +16,4 @@
 - [14. Secret, SecretVolume and Secret-Env - 4%](14-secret-secretvolume-secret-env.md)
 - [15. ConfigMap, ConfigMap-Volume - 5%](15-configmap-configmap-volume.md)
 - [16. Logging Sidecar - 6%](16-logging-sidecar.md)
+- [17. InitContainer - 4%](17-initcontainer.md)

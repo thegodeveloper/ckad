@@ -123,5 +123,5 @@ k -n mercury logs cleaner-8b4b66ddc-2gqxz -c logger-con > cleaner.log
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="15-configmap-configmap-volume.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="17-initcontainer.md" style="text-align: right;">Next &rarr;</a>
 </div>
