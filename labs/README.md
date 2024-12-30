@@ -1,0 +1,16 @@
+# Labs
+
+- [1. Namespaces - 1%](01-namespaces.md)
+- [2. Pods - 2 %](02-pods.md)
+- [3. Jobs - 2%](03-jobs.md)
+- [4. Helm Management - 5%](04-helm-management.md)
+- [5. ServiceAccount and Secret - 3%](05-serviceaccount-and-secret.md)
+- [6. ReadinessProbe - 7%](06-readinessprobe.md)
+- [7. Pods and Namespaces - 4%](07-pods-and-namespaces.md)
+- [8. Deployments and Rollouts - 4%](08-deployments-and-rollouts.md)
+- [9. Pod to Deployment - 5%](09-pod-to-deployment.md)
+- [10. Services and Logs - 4%](10-services-and-logs.md)
+- [11. Working with Containers - 7%](11-working-with-containers.md)
+- [12. Storage, PV, PVC, and Pod Volume - 8%](12-storage-pv-pvc-pod-volume.md)
+- [13. Storage, StorageClass, PVC - 6%](13-storage-storageclass-pvc.md)
+- [14. Secret, SecretVolume and Secret-Env - 4%](14-secret-secretvolume-secret-env.md)
