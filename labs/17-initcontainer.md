@@ -94,5 +94,5 @@ pod "tmp" deleted
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="16-logging-sidecar.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="18-service-misconfiguration.md" style="text-align: right;">Next &rarr;</a>
 </div>

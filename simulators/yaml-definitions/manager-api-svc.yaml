@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: manager-api-deployment
+  name: manager-api-svc
+  namespace: mars
+spec:
+  ports:
+  - port: 4444
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: manager-api-deployment

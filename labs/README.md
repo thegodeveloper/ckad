@@ -17,3 +17,4 @@
 - [15. ConfigMap, ConfigMap-Volume - 5%](15-configmap-configmap-volume.md)
 - [16. Logging Sidecar - 6%](16-logging-sidecar.md)
 - [17. InitContainer - 4%](17-initcontainer.md)
+- [18. Service Misconfiguration - 4%](18-service-misconfiguration.md)

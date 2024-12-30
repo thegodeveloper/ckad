@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: manager-api-pod
+  name: manager-api-deployment
+  namespace: mars
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: manager-api-pod
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: manager-api-pod
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        ports:
+        - containerPort: 80
+        resources: {}

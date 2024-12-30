@@ -141,4 +141,8 @@ kubectl apply -f yaml-definitions/cleaner.yaml 2>&1 || true
 # Lab 17
 kubectl create namespace mars 2>&1 || true
 
+# Lab 18
+kubectl apply -f yaml-definitions/manager-api-deployment.yaml 2>&1 || true
+kubectl apply -f yaml-definitions/manager-api-svc.yaml 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
