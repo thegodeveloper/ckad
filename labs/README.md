@@ -22,3 +22,4 @@
 - [20. NetworkPolicy Egress 1 - 9%](20-networkpolicy-egress-1.md)
 - [21. NetworkPolicy Egress 2 - 9%](21-networkpolicy-egress-2.md)
 - [22. Requests and Limits, ServiceAccount - 4%](22-requests-and-limits-serviceaccount.md)
+- [23. Labels and Annotations - 3%](23-labels-and-annotations.md)

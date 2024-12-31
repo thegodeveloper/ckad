@@ -162,4 +162,23 @@ kubectl create namespace venus 2>&1 || true
 kubectl -n venus run frontend --image=alpine/curl --labels app=frontend --command -- /bin/sh -c "while true; do sleep 3600; done" >/dev/null 2>&1 || true
 kubectl -n venus run api --image=hashicorp/http-echo --labels app=api --port=2222 -- --text="You are connected to API" --listen=:2222 >/dev/null 2>&1 || true
 
+# Lab 23
+kubectl create namespace sun 2>&1 || true
+kubectl -n sun run 0509649a --image=nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
+kubectl -n sun run 0509649b --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 1428721e --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 1428721f --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 43b9a --image=nginx --port=80 --labels type=test >/dev/null 2>&1 || true
+kubectl -n sun run 4c09 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 4c35 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 4fe4 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 5555a --image=nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
+kubectl -n sun run 86cda --image=nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
+kubectl -n sun run 8d1c --image=nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
+kubectl -n sun run a004a --image=nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
+kubectl -n sun run a94128196 --image=nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
+kubectl -n sun run afd79200c56a --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run b667 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run fdb2 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

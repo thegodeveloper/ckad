@@ -89,5 +89,5 @@ k -n neptune describe deployment neptune-10ab | grep Limits: -A5
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="21-networkpolicy-egress-2.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="23-labels-and-annotations.md" style="text-align: right;">Next &rarr;</a>
 </div>
