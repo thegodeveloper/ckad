@@ -105,5 +105,5 @@ echo 'Warning  ProvisioningFailed  12s (x8 over 116s)  persistentvolume-controll
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="12-storage-pv-pvc-pod-volume.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="14-secret-secretvolume-secret-env.md" style="text-align: right;">Next &rarr;</a>
 </div>
