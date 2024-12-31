@@ -106,5 +106,5 @@ k -n project-snake exec backend-0 -- curl -s 10.244.1.7:3333
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="19-service-clusterip-nodeport.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="21-networkpolicy-egress-2.md" style="text-align: right;">Next &rarr;</a>
 </div>
