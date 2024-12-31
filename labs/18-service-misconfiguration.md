@@ -178,5 +178,5 @@ pod "manager-test" deleted
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="17-initcontainer.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="19-service-clusterip-nodeport.md" style="text-align: right;">Next &rarr;</a>
 </div>

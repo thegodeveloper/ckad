@@ -18,3 +18,4 @@
 - [16. Logging Sidecar - 6%](16-logging-sidecar.md)
 - [17. InitContainer - 4%](17-initcontainer.md)
 - [18. Service Misconfiguration - 4%](18-service-misconfiguration.md)
+- [19. Service ClusterIP - NodePort - 3%](19-service-clusterip-nodeport.md)

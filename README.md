@@ -79,6 +79,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [16. Logging Sidecar - 6%](labs/16-logging-sidecar.md)
 - [17. InitContainer - 4%](labs/17-initcontainer.md)
 - [18. Service Misconfiguration - 4%](labs/18-service-misconfiguration.md)
+- [19. Service ClusterIP - NodePort - 3%](labs/19-service-clusterip-nodeport.md)
 
 ## Resources
 

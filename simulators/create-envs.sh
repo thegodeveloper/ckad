@@ -145,4 +145,9 @@ kubectl create namespace mars 2>&1 || true
 kubectl apply -f yaml-definitions/manager-api-deployment.yaml 2>&1 || true
 kubectl apply -f yaml-definitions/manager-api-svc.yaml 2>&1 || true
 
+# Lab 19
+kubectl create namespace jupiter 2>&1 || true
+kubectl -n jupiter create deployment jupiter-crew-deploy --image=httpd --replicas=1 2>&1 || true
+kubectl -n jupiter expose deployment jupiter-crew-deploy --name=jupiter-crew-svc --port=80 --target-port=80 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'
