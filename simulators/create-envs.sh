@@ -150,4 +150,14 @@ kubectl create namespace jupiter 2>&1 || true
 kubectl -n jupiter create deployment jupiter-crew-deploy --image=httpd --replicas=1 2>&1 || true
 kubectl -n jupiter expose deployment jupiter-crew-deploy --name=jupiter-crew-svc --port=80 --target-port=80 2>&1 || true
 
+# Lab 20
+kubectl create ns project-snake >/dev/null 2>&1 || true
+kubectl -n project-snake run backend-0 --image=alpine/curl --labels app=backend --command -- /bin/sh -c "while true; do sleep 3600; done" >/dev/null 2>&1 || true
+kubectl -n project-snake run db1-0 --image=hashicorp/http-echo --labels app=db1 --port=1111 -- --text="database one" --listen=:1111 >/dev/null 2>&1 || true
+kubectl -n project-snake run db2-0 --image=hashicorp/http-echo --labels app=db2 --port=2222 -- --text="database two" --listen=:2222 >/dev/null 2>&1 || true
+kubectl -n project-snake run vault-0 --image=hashicorp/http-echo --labels app=vault --port=3333 -- --text="vault secret storage" --listen=:3333 >/dev/null 2>&1 || true
+
+# Lab 21
+kubectl create namespace venus 2>&1 || true
+
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

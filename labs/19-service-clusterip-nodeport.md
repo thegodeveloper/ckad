@@ -144,5 +144,5 @@ jupiter-crew-deploy-6d76489fd-kcm26   1/1     Running   0          29m   10.244.
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="18-service-misconfiguration.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="20-networkpolicy-egress-1.md" style="text-align: right;">Next &rarr;</a>
 </div>

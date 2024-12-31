@@ -19,3 +19,4 @@
 - [17. InitContainer - 4%](17-initcontainer.md)
 - [18. Service Misconfiguration - 4%](18-service-misconfiguration.md)
 - [19. Service ClusterIP - NodePort - 3%](19-service-clusterip-nodeport.md)
+- [20. NetworkPolicy Egress 1 - 9%](20-networkpolicy-egress-1.md)
