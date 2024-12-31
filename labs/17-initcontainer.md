@@ -1,5 +1,7 @@
 # Question 17 - InitContainer - 4%
 
+## Task Definition
+
 - There is a *Deployment* YAML definition at `labs/17/test-init-container.yaml` file.
 - Create a copy of the file `labs/17/test-init-container.yaml` in `17-test-init-container.yaml` file.
 - This *Deployment* spins up a single *Pod* of image `nginx:1.17.3-alpine` and serves files from a mounted volume, which is empty right now.

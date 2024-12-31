@@ -1,5 +1,7 @@
 # Question 6 - ReadinessProbe - 7%
 
+## Task Definition
+
 - Create a single *Pod* named `pod6` in *Namespace* `default` of image `busybox:1.31.0`.
 - The *Pod* should have a `ReadinessProbe` executing `cat /tmp/ready`.
 - It should initially wait `5` and periodically wait `10` seconds. This will set the container ready only if the file `/tmp/ready` exists.

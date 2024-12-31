@@ -159,5 +159,7 @@ kubectl -n project-snake run vault-0 --image=hashicorp/http-echo --labels app=va
 
 # Lab 21
 kubectl create namespace venus 2>&1 || true
+kubectl -n venus run frontend --image=alpine/curl --labels app=frontend --command -- /bin/sh -c "while true; do sleep 3600; done" >/dev/null 2>&1 || true
+kubectl -n venus run api --image=hashicorp/http-echo --labels app=api --port=2222 -- --text="You are connected to API" --listen=:2222 >/dev/null 2>&1 || true
 
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

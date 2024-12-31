@@ -1,5 +1,7 @@
 # Question 19 - Service ClusterIP - NodePort - 3%
 
+## Task Definition
+
 - In *Namespace* `jupiter` you'll find an apache *Deployment* (with one replica) named `jupiter-crew-deploy`.
 - The *Deployment* is exposed via `ClusterIP` *Service* called `jupiter-crew-svc`.
 - Change this *Service* to a *NodePort* type to make it available on all nodes on port `30100`.

@@ -1,5 +1,7 @@
 # Question 8 - Deployments and Rollouts - 4%
 
+## Task Definition
+
 - There is an existing *Deployment* named `api-new-c32` in `neptune` *Namespace*.
 - An upgrade was made to the Deployment but the updated version never came online.
 - Check the *Deployment* history and find a revision that works, then rollback to it.

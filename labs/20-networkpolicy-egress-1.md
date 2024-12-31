@@ -1,11 +1,5 @@
 # Question 20 - Network Policy Egress 1 - 9%
 
-## Use context
-
-```shell
-kubectl config use-context kind-k8s-c1
-```
-
 ## Task Definition
 
 - There was a security incident where an intruder was able to access the whole cluster from a single hacked backend Pod.

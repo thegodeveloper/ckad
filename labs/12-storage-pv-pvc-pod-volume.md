@@ -1,5 +1,7 @@
 # Question 12 - Storage, PV, PVC, and Pod Volume - 8%
 
+## Task Definition
+
 - Create a new *PersistentVolume* named `earth-project-earthflower-pv`.
 - It should have a capacity of `2Gi`, *accessMode* `ReadWriteOnce`, *hostPath* `/Volumes/Data`, and no `storageClassName` defined.
 - Create a new *PersistentVolumeClaim* in *Namespace* `earth` named `earth-project-earthflower-pvc`. 

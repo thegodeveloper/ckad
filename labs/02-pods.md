@@ -1,5 +1,7 @@
 # Question 2 - Namespaces - 2%
 
+## Task Definition
+
 - Create a `Pod` of image `httpd:2.4.41-alpine` in Namespace `default`.
 - The `Pod` should be named `pod1` and the container should be named `pod1-container`.
 - Write a command that shows the status of `pod1` in `pod1-status-command.sh`.

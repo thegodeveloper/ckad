@@ -1,5 +1,7 @@
 # Question 1 - Namespaces - 1%
 
+## Task Definition
+
 - Get the list of namespaces and save it to `namespaces.txt`.
 
 ## Solution

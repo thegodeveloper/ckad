@@ -1,5 +1,7 @@
 # Question 4 - Helm Management - 5%
 
+## Task Definition
+
 - Perform all the operations in the `mercury` *Namespace*.
 - Delete release `internal-issue-report-apiv1`.
 - Upgrade release `internal-issue-report-apiv2` to any newer version available of chart bitnami/nginx.

@@ -1,5 +1,7 @@
 # Question 11 - Working with Containers - 7%
 
+## Task Definition
+
 - There are files to build a container image located at `labs/11/image`.
 - The container will run a Golang application which outputs information stdout.
 - Change the *Dockerfile* to set an environment variable `SUN_CIPHER_ID` with the value `7d6e2993-p86p-7b78-b17b-cE6decb8c18p`.

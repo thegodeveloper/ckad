@@ -1,5 +1,7 @@
 # Question 10 - Services and Logs - 4%
 
+## Task Definition
+
 - Create a *Pod* named `project-plt-6cc-api` of image `nginx:1.17.3-alpine`.
 - The *Pod* should be identified by label `project: plt-6cc-api`.
 - Create a `ClusterIP` *Service* named `project-plt-6cc-svc` in *Namespace* `pluto` to expose the *Pod*.
