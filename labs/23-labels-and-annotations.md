@@ -201,5 +201,4 @@ Annotations:      cni.projectcalico.org/containerID: d580464e957a35b6f3b06784634
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="22-requests-and-limits-serviceaccount.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
 </div>
