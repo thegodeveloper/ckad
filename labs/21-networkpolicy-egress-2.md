@@ -91,10 +91,15 @@ Connecting to www.google.de ([::ffff:142.250.78.3]:80)
 k -n venus exec frontend -- curl -s 10.244.88.209:2222
 You are connected to API
 ```
+
+## Resources
+
+- [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+
 </details>
 
 <br>
 <div style="display: flex; justify-content: space-between;">
   <a href="20-networkpolicy-egress-1.md" style="text-align: left;">&larr; Prev</a>
-  <a href="" style="text-align: right;">Next &rarr;</a>
+  <a href="22-requests-and-limits-serviceaccount.md" style="text-align: right;">Next &rarr;</a>
 </div>

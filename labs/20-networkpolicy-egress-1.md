@@ -101,6 +101,10 @@ database two
 k -n project-snake exec backend-0 -- curl -s 10.244.1.7:3333
 ```
 
+## Resources
+
+- [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+
 </details>
 
 <br>

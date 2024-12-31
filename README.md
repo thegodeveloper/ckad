@@ -82,6 +82,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 - [19. Service ClusterIP - NodePort - 3%](labs/19-service-clusterip-nodeport.md)
 - [20. NetworkPolicy Egress 1 - 9%](labs/20-networkpolicy-egress-1.md)
 - [21. NetworkPolicy Egress 2 - 9%](labs/21-networkpolicy-egress-2.md)
+- [22. Requests and Limits, ServiceAccount - 4%](labs/22-requests-and-limits-serviceaccount.md)
 
 ## Resources
 
