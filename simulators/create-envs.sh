@@ -15,6 +15,9 @@ echo '\n🚜 Initializing the Kubernetes cluster: k8s-c1...'
 # Use context
 kubectl config use-context kind-k8s-c1 >/dev/null 2>&1 || true
 
+# Enable autocomplete in Kubernetes
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
 # Install Metrics Server
 helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/ >/dev/null 2>&1 || true
 helm repo update >/dev/null 2>&1 || true
