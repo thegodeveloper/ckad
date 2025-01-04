@@ -67,9 +67,6 @@ spec:
       labels:
         id: holy-api
       name: holy-api
-      securityContext:
-        allowPrivilegeEscalation: false # add this line
-        privileged: false # add this line
     spec: 
       containers:
         - env:
@@ -81,6 +78,9 @@ spec:
               value: 2qz-]2OJlWDSTn_;RFQ
           image: nginx:1.17.3-alpine
           name: holy-api-container
+          securityContext:
+            allowPrivilegeEscalation: false # add this line
+            privileged: false # add this line
           volumeMounts:
             - mountPath: /cache1
               name: cache-volume1
