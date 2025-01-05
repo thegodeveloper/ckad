@@ -149,7 +149,7 @@ kubectl apply -f yaml-definitions/manager-api-svc.yaml >/dev/null 2>&1 || true
 
 # Lab 19
 kubectl create namespace jupiter >/dev/null 2>&1 || true
-kubectl -n jupiter create deployment jupiter-crew-deploy --image=httpd --replicas=1 >/dev/null 2>&1 || true
+kubectl -n jupiter create deployment jupiter-crew-deploy --image=bitnami/apache --replicas=1 >/dev/null 2>&1 || true
 kubectl -n jupiter expose deployment jupiter-crew-deploy --name=jupiter-crew-svc --port=80 --target-port=80 >/dev/null 2>&1 || true
 
 # Lab 20
