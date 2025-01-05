@@ -75,7 +75,7 @@ spec:
               value: PCAILGej5Ld@Q%{Q1=#
             - name: CACHE_KEY_3
               value: 2qz-]2OJlWDSTn_;RFQ
-          image: nginx:1.17.3-alpine
+          image: bitnami/nginx
           name: holy-api-container
           securityContext:
             allowPrivilegeEscalation: false # add this line
