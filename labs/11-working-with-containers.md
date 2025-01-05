@@ -57,12 +57,6 @@ localhost:5000/sun-cipher   latest      9c299608aca1   About a minute ago   12.2
 localhost:5000/sun-cipher   v1-docker   9c299608aca1   About a minute ago   12.2MB
 ```
 
-### Build the Image using Podman
-
-```shell
-
-```
-
 ### Build the Image using Podman to create a tag
 
 ```shell
