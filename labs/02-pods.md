@@ -29,7 +29,7 @@ metadata:
 spec:
   containers:
     - image: bitnami/apache
-      name: pod1-container <-- add this
+      name: pod1-container # add this
       resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
