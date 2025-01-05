@@ -8,7 +8,7 @@
 - It should request `2Gi` storage, *accessMode* `ReadWriteOnce` and should not define a *storageClassName*.
 - The *PVC* should bound to the *PV* correctly.
 - Create a new *Deployment* `project-earthflower` in *Namespace* `earth` which mounts that volume at `/tmp/project-data`.
-- *Pods* of that *Deployment* should be of image `httpd:2.4.41-alpine`.
+- *Pods* of that *Deployment* should be of image `bitnami/apache`.
 
 ## Solution
 
@@ -98,7 +98,7 @@ persistentvolume/safari-pv   2Gi        RWO            Retain           Availabl
 ### Create the Deployment YAML Definition
 
 ```shell
-k -n earth create deploy project-earthflower --image=httpd:2.4.41-alpine -o yaml --dry-run=client > 12-deploy.yaml
+k -n earth create deploy project-earthflower --image=bitnami/apache -o yaml --dry-run=client > 12-deploy.yaml
 ```
 
 Update `volumes` and `volumeMounts` entries.
@@ -129,7 +129,7 @@ spec:
           persistentVolumeClaim:
             claimName: earth-project-earthflower-pvc
       containers:
-      - image: httpd:2.4.41-alpine
+      - image: bitnami/apache
         name: httpd
         resources: {}
         volumeMounts:
