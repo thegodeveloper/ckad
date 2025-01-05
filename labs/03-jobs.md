@@ -2,7 +2,7 @@
 
 ## Task Definition
 
-- Create a `Job` template named `job.yaml`.
+- Create a `Job` template named `3.yaml`.
 - The `Job` should run image `busybox:1.31.0` and execute `sleep 7 && echo done`.
 - Should be in namespace `neptune`.
 - Run a total of `3` times and execute `2` runs in parallel. 
@@ -17,7 +17,7 @@
 ### Create a Pod definition
 
 ```shell
-k -n neptune create job nep-new-job --image=busybox:1.31.0 --dry-run=client -o yaml > job.yaml -- sh -c "sleep 7 && echo done"
+k -n neptune create job nep-new-job --image=busybox:1.31.0 --dry-run=client -o yaml > 3.yaml -- sh -c "sleep 7 && echo done"
 ```
 
 ### Add container name to YAML definition
