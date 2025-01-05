@@ -103,12 +103,12 @@ kubectl -n neptune create secret generic neptune-sa-v2-token --type='kubernetes.
 kubectl apply -f yaml-definitions/webserver-sat.yaml >/dev/null 2>&1 || true
 
 # Lab 8
-kubectl -n neptune create deployment api-new-c32 --image=nginx:1.26.1 --replicas=3 >/dev/null 2>&1 || true
+kubectl -n neptune create deployment api-new-c32 --image=bitnami/nginx:1.26.1 --replicas=3 >/dev/null 2>&1 || true
 kubectl -n neptune rollout history deployment/api-new-c32 >/dev/null 2>&1 || true
-kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.2 --record >/dev/null 2>&1 || true
-kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.3 --record >/dev/null 2>&1 || true
-kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.4 --record >/dev/null 2>&1 || true
-kubectl -n neptune set image deployment/api-new-c32 nginx=ngnix:1.26.5 --record >/dev/null 2>&1 || true
+kubectl -n neptune set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.2 --record >/dev/null 2>&1 || true
+kubectl -n neptune set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.3 --record >/dev/null 2>&1 || true
+kubectl -n neptune set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.4 --record >/dev/null 2>&1 || true
+kubectl -n neptune set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.5 --record >/dev/null 2>&1 || true
 
 # Lab 9
 kubectl create namespace pluto >/dev/null 2>&1 || true

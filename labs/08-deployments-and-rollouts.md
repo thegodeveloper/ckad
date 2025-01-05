@@ -39,10 +39,10 @@ k -n neptune rollout history deployment/api-new-c32
 deployment.apps/api-new-c32 
 REVISION  CHANGE-CAUSE
 1         <none>
-2         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.2 --namespace=neptune --record=true
-3         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.3 --namespace=neptune --record=true
-4         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.4 --namespace=neptune --record=true
-5         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.5 --namespace=neptune --record=true
+2         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.2 --namespace=neptune --record=true
+3         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.3 --namespace=neptune --record=true
+4         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.4 --namespace=neptune --record=true
+5         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.5 --namespace=neptune --record=true
 ```
 
 ### Rollback to Working Revision
@@ -76,10 +76,10 @@ api-new-c32-79b499db9f-w4ml7   1/1     Running   0          97s
 k -n neptune rollout history deployment/api-new-c32
 deployment.apps/api-new-c32 
 REVISION  CHANGE-CAUSE
-2         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.2 --namespace=neptune --record=true
-3         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.3 --namespace=neptune --record=true
-4         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.4 --namespace=neptune --record=true
-5         kubectl set image deployment/api-new-c32 nginx=ngnix:1.26.5 --namespace=neptune --record=true
+2         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.2 --namespace=neptune --record=true
+3         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.3 --namespace=neptune --record=true
+4         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.4 --namespace=neptune --record=true
+5         kubectl set image deployment/api-new-c32 nginx=bitnami/nginx:1.26.5 --namespace=neptune --record=true
 6         <none>
 ````
 
