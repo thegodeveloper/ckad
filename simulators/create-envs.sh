@@ -80,9 +80,6 @@ docker exec -it k8s-c1-control-plane bash -c "echo '$INGRESS_LB_IP ckad.godevelo
 docker exec -it k8s-c1-worker bash -c "echo '$INGRESS_LB_IP ckad.godeveloper.io' >> /etc/hosts" >/dev/null 2>&1 || true
 docker exec -it k8s-c1-worker2 bash -c "echo '$INGRESS_LB_IP ckad.godeveloper.io' >> /etc/hosts" >/dev/null 2>&1 || true
 
-# Lab 37
-kubectl apply -f yaml-definitions/37.yaml >/dev/null 2>&1 || true
-
 # Lab 3
 kubectl create namespace neptune >/dev/null 2>&1 || true
 
