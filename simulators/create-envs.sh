@@ -16,6 +16,8 @@ echo '\n🚜 Initializing the Kubernetes cluster: k8s-c1...'
 kubectl config use-context kind-k8s-c1 >/dev/null 2>&1 || true
 
 # Enable autocomplete in Kubernetes
+autoload -Uz compinit
+compinit
 source <(kubectl completion zsh)
 
 # Install Metrics Server
@@ -116,42 +118,42 @@ kubectl create namespace pluto >/dev/null 2>&1 || true
 kubectl apply -f yaml-definitions/holy-api-pod.yaml >/dev/null 2>&1 || true
 
 # Lab 11
-mkdir -p ~/podman-registry/data 2>&1 || true
-rm -rf ~/podman-registry/podman-registry.yaml 2>&1 || true
-rm -rf ~/.config/containers/registries.conf 2>&1 || true
-cp -f yaml-definitions/podman-registry.yaml ~/podman-registry/ 2>&1 || true
-podman-compose -f ~/podman-registry/podman-registry.yaml up -d 2>&1 || true
-mkdir -p ~/.config/containers 2>&1 || true
-cp -f yaml-definitions/registries.conf ~/.config/containers/registries.conf 2>&1 || true
-rm -rf ../labs/11/image/Dockerfile 2>&1 || true
-cp ./dockerfiles/11-Dockerfile ../labs/11/image/Dockerfile 2>&1 || true
+mkdir -p ~/podman-registry/data >/dev/null 2>&1 || true
+rm -rf ~/podman-registry/podman-registry.yaml >/dev/null 2>&1 || true
+rm -rf ~/.config/containers/registries.conf >/dev/null 2>&1 || true
+cp -f yaml-definitions/podman-registry.yaml ~/podman-registry/ >/dev/null 2>&1 || true
+podman-compose -f ~/podman-registry/podman-registry.yaml up -d >/dev/null 2>&1 || true
+mkdir -p ~/.config/containers >/dev/null 2>&1 || true
+cp -f yaml-definitions/registries.conf ~/.config/containers/registries.conf >/dev/null 2>&1 || true
+rm -rf ../labs/11/image/Dockerfile >/dev/null 2>&1 || true
+cp ./dockerfiles/11-Dockerfile ../labs/11/image/Dockerfile >/dev/null 2>&1 || true
 
 # Lab 12
-kubectl create namespace earth 2>&1 || true
+kubectl create namespace earth >/dev/null 2>&1 || true
 
 # Lab 13
-kubectl create namespace moon 2>&1 || true
+kubectl create namespace moon >/dev/null 2>&1 || true
 
 # Lab 14
-kubectl apply -f yaml-definitions/secret-handler.yaml 2>&1 || true
+kubectl apply -f yaml-definitions/secret-handler.yaml >/dev/null 2>&1 || true
 
 # Lab 15
-kubectl apply -f yaml-definitions/web-moon.yaml 2>&1 || true
+kubectl apply -f yaml-definitions/web-moon.yaml >/dev/null 2>&1 || true
 
 # Lab 16
-kubectl apply -f yaml-definitions/cleaner.yaml 2>&1 || true
+kubectl apply -f yaml-definitions/cleaner.yaml >/dev/null 2>&1 || true
 
 # Lab 17
-kubectl create namespace mars 2>&1 || true
+kubectl create namespace mars >/dev/null 2>&1 || true
 
 # Lab 18
-kubectl apply -f yaml-definitions/manager-api-deployment.yaml 2>&1 || true
-kubectl apply -f yaml-definitions/manager-api-svc.yaml 2>&1 || true
+kubectl apply -f yaml-definitions/manager-api-deployment.yaml >/dev/null 2>&1 || true
+kubectl apply -f yaml-definitions/manager-api-svc.yaml >/dev/null 2>&1 || true
 
 # Lab 19
-kubectl create namespace jupiter 2>&1 || true
-kubectl -n jupiter create deployment jupiter-crew-deploy --image=httpd --replicas=1 2>&1 || true
-kubectl -n jupiter expose deployment jupiter-crew-deploy --name=jupiter-crew-svc --port=80 --target-port=80 2>&1 || true
+kubectl create namespace jupiter >/dev/null 2>&1 || true
+kubectl -n jupiter create deployment jupiter-crew-deploy --image=httpd --replicas=1 >/dev/null 2>&1 || true
+kubectl -n jupiter expose deployment jupiter-crew-deploy --name=jupiter-crew-svc --port=80 --target-port=80 >/dev/null 2>&1 || true
 
 # Lab 20
 kubectl create ns project-snake >/dev/null 2>&1 || true
@@ -161,12 +163,12 @@ kubectl -n project-snake run db2-0 --image=hashicorp/http-echo --labels app=db2 
 kubectl -n project-snake run vault-0 --image=hashicorp/http-echo --labels app=vault --port=3333 -- --text="vault secret storage" --listen=:3333 >/dev/null 2>&1 || true
 
 # Lab 21
-kubectl create namespace venus 2>&1 || true
+kubectl create namespace venus >/dev/null 2>&1 || true
 kubectl -n venus run frontend --image=alpine/curl --labels app=frontend --command -- /bin/sh -c "while true; do sleep 3600; done" >/dev/null 2>&1 || true
 kubectl -n venus run api --image=hashicorp/http-echo --labels app=api --port=2222 -- --text="You are connected to API" --listen=:2222 >/dev/null 2>&1 || true
 
 # Lab 23
-kubectl create namespace sun 2>&1 || true
+kubectl create namespace sun >/dev/null 2>&1 || true
 kubectl -n sun run 0509649a --image=nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
 kubectl -n sun run 0509649b --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
 kubectl -n sun run 1428721e --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
