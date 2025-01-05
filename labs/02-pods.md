@@ -2,7 +2,7 @@
 
 ## Task Definition
 
-- Create a `Pod` of image `httpd:2.4.41-alpine` in Namespace `default`.
+- Create a `Pod` of image `bitnami/apache` in Namespace `default`.
 - The `Pod` should be named `pod1` and the container should be named `pod1-container`.
 - Write a command that shows the status of `pod1` in `pod1-status-command.sh`.
 
@@ -14,7 +14,7 @@
 ### Create a Pod definition
 
 ```shell
-k run pod1 --image=httpd:2.4.41-alpine --dry-run=client -o yaml > 2.yaml
+k run pod1 --image=bitnami/apache --dry-run=client -o yaml > 2.yaml
 ```
 
 ### Add container name to YAML definition
@@ -28,7 +28,7 @@ metadata:
   name: pod1
 spec:
   containers:
-    - image: httpd:2.4.41-alpine
+    - image: bitnami/apache
       name: pod1-container <-- add this
       resources: {}
   dnsPolicy: ClusterFirst
