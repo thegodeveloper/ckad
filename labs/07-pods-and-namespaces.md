@@ -76,7 +76,7 @@ metadata:
   uid: 59b6dfad-57f0-45dc-9678-a8835cb66cb8
 spec:
   containers:
-  - image: nginx:1.16.1-alpine
+  - image: bitnami/nginx
     imagePullPolicy: IfNotPresent
     name: webserver-sat
     resources: {}

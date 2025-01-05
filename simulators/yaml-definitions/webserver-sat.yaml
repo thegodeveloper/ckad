@@ -15,7 +15,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -31,7 +31,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -47,7 +47,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -63,7 +63,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -79,7 +79,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -95,7 +95,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
@@ -111,7 +111,7 @@ metadata:
   namespace: saturn
 spec:
   containers:
-    - image: nginx:1.16.1-alpine
+    - image: bitnami/nginx
       imagePullPolicy: IfNotPresent
       name: webserver-sat
   restartPolicy: Always
