@@ -66,7 +66,6 @@ spec:
     metadata: # From here corresponds to Pod definition
       labels:
         id: holy-api
-      name: holy-api
     spec: 
       containers:
         - env:
