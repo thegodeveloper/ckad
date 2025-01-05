@@ -4,7 +4,7 @@
 
 - There is a *Deployment* YAML definition at `labs/17/test-init-container.yaml` file.
 - Create a copy of the file `labs/17/test-init-container.yaml` in `17-test-init-container.yaml` file.
-- This *Deployment* spins up a single *Pod* of image `nginx:1.17.3-alpine` and serves files from a mounted volume, which is empty right now.
+- This *Deployment* spins up a single *Pod* of image `bitnami/nginx` and serves files from a mounted volume, which is empty right now.
 - Create an *initContainer* named `init-con` which also mounts that volume and creates a file `index.html` with content `check this out!` in the root of the mounted volume.
 - For this test we ignore that it doesn't contain a valid HTML.
 - The *initContainer* should be using image `busybox:1.31.0`.
@@ -50,7 +50,7 @@ spec:
             - name: web-content
               mountPath: /tmp/web-content # initContainer end
       containers:
-        - image: nginx:1.17.3-alpine
+        - image: bitnami/nginx
           name: nginx
           volumeMounts:
             - name: web-content

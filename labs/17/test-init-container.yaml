@@ -17,7 +17,7 @@ spec:
         - name: web-content
           emptyDir: {}
       containers:
-        - image: nginx:1.17.3-alpine
+        - image: bitnami/nginx
           name: nginx
           volumeMounts:
             - name: web-content
