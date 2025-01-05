@@ -166,21 +166,21 @@ kubectl -n venus run api --image=hashicorp/http-echo --labels app=api --port=222
 
 # Lab 23
 kubectl create namespace sun >/dev/null 2>&1 || true
-kubectl -n sun run 0509649a --image=nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
-kubectl -n sun run 0509649b --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 1428721e --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 1428721f --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 43b9a --image=nginx --port=80 --labels type=test >/dev/null 2>&1 || true
-kubectl -n sun run 4c09 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 4c35 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 4fe4 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run 5555a --image=nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
-kubectl -n sun run 86cda --image=nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
-kubectl -n sun run 8d1c --image=nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
-kubectl -n sun run a004a --image=nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
-kubectl -n sun run a94128196 --image=nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
-kubectl -n sun run afd79200c56a --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run b667 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
-kubectl -n sun run fdb2 --image=nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 0509649a --image=bitnami/nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
+kubectl -n sun run 0509649b --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 1428721e --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 1428721f --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 43b9a --image=bitnami/nginx --port=80 --labels type=test >/dev/null 2>&1 || true
+kubectl -n sun run 4c09 --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 4c35 --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 4fe4 --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run 5555a --image=bitnami/nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
+kubectl -n sun run 86cda --image=bitnami/nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
+kubectl -n sun run 8d1c --image=bitnami/nginx --port=80 --labels type=messenger >/dev/null 2>&1 || true
+kubectl -n sun run a004a --image=bitnami/nginx --port=80 --labels type=runner >/dev/null 2>&1 || true
+kubectl -n sun run a94128196 --image=bitnami/nginx --port=80 --labels type=runner,type_old=messenger >/dev/null 2>&1 || true
+kubectl -n sun run afd79200c56a --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run b667 --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
+kubectl -n sun run fdb2 --image=bitnami/nginx --port=80 --labels type=worker >/dev/null 2>&1 || true
 
 echo '🚀 The Kubernetes cluster "k8s-c1" has been successfully prepared!\n'

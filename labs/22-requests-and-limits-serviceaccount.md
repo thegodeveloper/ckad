@@ -2,7 +2,7 @@
 
 ## Task Definition
 
-- Create a *Deployment* named `neptune-10ab` with `3`replicas, set image to `httpd:2.4-alpine`.
+- Create a *Deployment* named `neptune-10ab` with `3`replicas, set image to `bitnami/apache`.
 - The containers should be named `neptune-pod-10ab`.
 - Each container should have a memory request of `20Mi` and a memory limit of `50Mi`.
 - The team has its own *ServiceAccount* `neptune-sa-v2` under which the *Pods* should run.
@@ -16,7 +16,7 @@
 ### Create the initial configuration of the Deployment
 
 ```shell
-k -n neptune create deploy neptune-10ab --image=httpd:2.4-alpine --replicas=3 --dry-run=client -o yaml > 22.yaml
+k -n neptune create deploy neptune-10ab --image=bitnami/apache --replicas=3 --dry-run=client -o yaml > 22.yaml
 ```
 
 ### Edit the YAML file
@@ -42,7 +42,7 @@ spec:
     spec:
       serviceAccountName: neptune-sa-v2 # add
       containers:
-        - image: httpd:2.4-alpine
+        - image: bitnami/apache
           name: neptune-pod-10ab
           resources: 
             limits:
