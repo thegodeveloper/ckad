@@ -2,7 +2,7 @@
 
 ## Task Definition
 
-- Create a *Pod* named `project-plt-6cc-api` of image `bitnami/nginx`.
+- Create a *Pod* named `project-plt-6cc-api` of image `nginx:1.17.3-alpine`.
 - The *Pod* should be identified by label `project: plt-6cc-api`.
 - Create a `ClusterIP` *Service* named `project-plt-6cc-svc` in *Namespace* `pluto` to expose the *Pod*.
 - The *Service* should use the TCP Port redirection of `3333:80`.
@@ -18,7 +18,7 @@
 ### Create a Pod
 
 ```shell
-k -n pluto run project-plt-6cc-api --image=bitnami/nginx --labels project=plt-6cc-api
+k -n pluto run project-plt-6cc-api --image=nginx:1.17.3-alpine --labels project=plt-6cc-api
 pod/project-plt-6cc-api created
 ```
 
