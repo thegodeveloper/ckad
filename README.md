@@ -7,6 +7,11 @@
 - Podman (brew)
 - podman-compose (brew)
 
+## CKAD Notes
+
+- The Certified Kubernetes Application Developer (CKAD) exam has 19 performance-based questions. 
+- The exam is two hours long and is entirely command line based.
+
 ## Environment Configuration
 
 ```shell
