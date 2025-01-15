@@ -2,7 +2,7 @@
 
 ## Task Definition
 
-- There is a Nginx Server *Deployment* called `web-moon` in *Namespace* moon.
+- There is a Nginx Server *Deployment* called `web-moon` in *Namespace* `moon`.
 - Someone started to configuring it but it was never completed.
 - To complete the configuration, please create a *ConfigMap* called `configmap-web-moon-html` containing the content of the `labs/15/web-moon.html`, under the data key-name `index.html`.
 - The *Deployment* `web-moon` is already configured to work with this *ConfigMap* and serve its content.
