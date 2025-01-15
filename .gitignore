@@ -28,12 +28,17 @@ labs/11/image/Dockerfile
 **11-containers.txt
 # Lab 12
 12-pv.yaml
+12pv.yaml
 12-pvc.yaml
+12pvc.yaml
 12-deploy.yaml
+12d.yaml
 # Lab 13
+13.yaml
 13-reason.txt
 13-sc.yaml
 13-pvc.yaml
+13pvc.yaml
 # Lab 14
 secret-handler-new.yaml
 # Lab 16
