@@ -50,7 +50,7 @@ vault secret storage
 ### Create a NetworkPolicy by copying and changing an example from the Kubernetes docs
 
 ```shell
-vim 24-np.yaml
+vim 20.yaml
 ```
 
 ```yaml
