@@ -64,6 +64,10 @@ k8s-c1-worker          Ready    <none>          3m23s   v1.31.2
 k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 ```
 
+## Cheat-Sheet with useful commands for the exam
+
+- [Cheat Sheet](cheat_sheet.md)
+
 ## Labs
 
 - [1. Namespaces - 1%](labs/01-namespaces.md)
