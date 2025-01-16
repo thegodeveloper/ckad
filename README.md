@@ -64,9 +64,10 @@ k8s-c1-worker          Ready    <none>          3m23s   v1.31.2
 k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 ```
 
-## Cheat-Sheet with useful commands for the exam
+## Cheat-Sheets
 
 - [Cheat Sheet](cheat_sheet.md)
+- [Tmux Cheat Sheet](tmux_cheat_sheet.md)
 
 ## Labs
 
