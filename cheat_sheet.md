@@ -132,6 +132,12 @@ key-name could be = index.html
 k -n namespace_name get deploy deployment_name --show-labels
 ```
 
+### Get logs from a sidecar
+
+```shell
+k -n namespace_name logs pod_name -c container_name
+```
+
 ## Helm Commands
 
 ### List Helm releases on a Namespace
@@ -144,12 +150,6 @@ helm -n namespace_name list
 
 ```shell
 helm repo list
-```
-
-### Get logs from a sidecar
-
-```shell
-k -n namespace_name logs pod_name -c container_name
 ```
 
 ### List Helm releases of a repo
