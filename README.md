@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Docker Desktop
+- Docker Desktop or Rancher Desktop
 - Kind (brew)
 - Podman (brew)
 - podman-compose (brew)
@@ -97,6 +97,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
 
 ## Resources
 
+- [Rancher Desktop Install](https://docs.rancherdesktop.io/getting-started/installation/)
 - [Kubernetes Documentation](https://kubernetes.io/docs)
 - [Kodekloud](https://kodekloud.com)
 - [Certified Kubernetes Application Developer](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
