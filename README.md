@@ -24,6 +24,8 @@ alias kc=kubectx
 
 ## Create the cluster
 
+- Time to create: 6 minutes.
+
 ```shell
 cd simulators
 ./create-envs.sh
