@@ -1,5 +1,11 @@
 # Certified Kubernetes Application Developer (CKAD)
 
+The following was tested on the following machines and operating systems:
+
+- MacBook Pro M3 64GB
+- Huawei D15 Matebook 16GB with Debian 12 ★
+- Minisforum Ryzen 9 64GB with Arch Linux
+
 ## Requirements
 
 - Docker Engine
