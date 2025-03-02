@@ -2,10 +2,12 @@
 
 ## Requirements
 
-- Docker Desktop or Rancher Desktop
+- Docker Engine
 - Kind (brew)
 - Podman (brew)
 - podman-compose (brew)
+- kubernetes-cli (brew)
+- kubectx (brew)
 
 ## CKAD Notes
 
@@ -16,6 +18,7 @@
 
 ```shell
 alias k=kubectl
+alias kc=kubectx
 ```
 
 ## Create the cluster
