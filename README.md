@@ -8,6 +8,7 @@
 - podman-compose (brew)
 - kubernetes-cli (brew)
 - kubectx (brew)
+- Helm (brew)
 
 ## CKAD Notes
 
