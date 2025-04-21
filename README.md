@@ -29,7 +29,7 @@ cd simulators
 --------------------------
 
 Creating cluster "k8s-c1" ...
- ✓ Ensuring node image (kindest/node:v1.31.2) 🖼
+ ✓ Ensuring node image (kindest/node:v1.32.0) 🖼
  ✓ Preparing nodes 📦 📦 📦  
  ✓ Writing configuration 📜 
  ✓ Starting control-plane 🕹️ 
@@ -59,9 +59,9 @@ kind-k8s-c1
 ```shell
 k get nodes
 NAME                   STATUS   ROLES           AGE     VERSION
-k8s-c1-control-plane   Ready    control-plane   3m39s   v1.31.2
-k8s-c1-worker          Ready    <none>          3m23s   v1.31.2
-k8s-c1-worker2         Ready    <none>          3m23s   v1.31.2
+k8s-c1-control-plane   Ready    control-plane   3m39s   v1.32.0
+k8s-c1-worker          Ready    <none>          3m23s   v1.32.0
+k8s-c1-worker2         Ready    <none>          3m23s   v1.32.0
 ```
 
 ## Cheat-Sheets

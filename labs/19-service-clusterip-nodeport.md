@@ -106,9 +106,9 @@ pod "svc-test" deleted
 ```shell
 k get nodes -o wide
 NAME                   STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
-k8s-c1-control-plane   Ready    control-plane   25m   v1.31.2   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
-k8s-c1-worker          Ready    <none>          25m   v1.31.2   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
-k8s-c1-worker2         Ready    <none>          25m   v1.31.2   172.18.0.4    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
+k8s-c1-control-plane   Ready    control-plane   25m   v1.32.0   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
+k8s-c1-worker          Ready    <none>          25m   v1.32.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
+k8s-c1-worker2         Ready    <none>          25m   v1.32.0   172.18.0.4    <none>        Debian GNU/Linux 12 (bookworm)   6.10.14-linuxkit   containerd://1.7.18
 ```
 
 ## Validate the connection using one node IP address
