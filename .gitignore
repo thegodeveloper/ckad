@@ -20,6 +20,8 @@ token.txt
 9.yaml
 9d.yaml
 # Lab 10
+10.yaml
+10s.yaml
 service_test.html
 service_test.log
 # Lab 11
@@ -37,6 +39,7 @@ labs/11/image/Dockerfile
 13.yaml
 13-reason.txt
 13-sc.yaml
+13sc.yaml
 13-pvc.yaml
 13pvc.yaml
 # Lab 14

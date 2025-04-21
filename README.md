@@ -1,11 +1,20 @@
 # Certified Kubernetes Application Developer (CKAD)
 
+The following was tested on the following machines and operating systems:
+
+- MacBook Pro M3 64GB
+- Huawei D15 Matebook 16GB with Debian 12 ★
+- Minisforum Ryzen 9 64GB with Arch Linux
+
 ## Requirements
 
-- Docker Desktop
+- Docker Engine
 - Kind (brew)
 - Podman (brew)
 - podman-compose (brew)
+- kubernetes-cli (brew)
+- kubectx (brew)
+- Helm (brew)
 
 ## CKAD Notes
 
@@ -16,9 +25,12 @@
 
 ```shell
 alias k=kubectl
+alias kc=kubectx
 ```
 
 ## Create the cluster
+
+- Time to create: 6 minutes.
 
 ```shell
 cd simulators
@@ -97,6 +109,7 @@ k8s-c1-worker2         Ready    <none>          3m23s   v1.32.0
 
 ## Resources
 
+- [Rancher Desktop Install](https://docs.rancherdesktop.io/getting-started/installation/)
 - [Kubernetes Documentation](https://kubernetes.io/docs)
 - [Kodekloud](https://kodekloud.com)
 - [Certified Kubernetes Application Developer](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/)
