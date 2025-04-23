@@ -51,8 +51,8 @@ The release `internal-issue-report-apiv2` is on version `18.2.5` and the latest 
 ```shell
 helm search repo bitnami/nginx
 NAME                                    CHART VERSION   APP VERSION     DESCRIPTION                                       
-bitnami/nginx                           18.3.1          1.27.3          NGINX Open Source is a web server that can be a...
-bitnami/nginx-ingress-controller        11.6.0          1.11.3          NGINX Ingress Controller is an Ingress controll...
+bitnami/nginx                           19.1.1          1.27.5          NGINX Open Source is a web server that can be a...
+bitnami/nginx-ingress-controller        11.6.14         1.12.1          NGINX Ingress Controller is an Ingress controll...
 bitnami/nginx-intel                     2.1.15          0.4.9           DEPRECATED NGINX Open Source for Intel is a lig...
 ```
 
@@ -62,31 +62,33 @@ bitnami/nginx-intel                     2.1.15          0.4.9           DEPRECAT
 helm -n mercury upgrade internal-issue-report-apiv2 bitnami/nginx
 Release "internal-issue-report-apiv2" has been upgraded. Happy Helming!
 NAME: internal-issue-report-apiv2
-LAST DEPLOYED: Fri Dec 13 10:26:26 2024
+LAST DEPLOYED: Wed Apr 23 17:55:38 2025
 NAMESPACE: mercury
 STATUS: deployed
 REVISION: 2
 TEST SUITE: None
 NOTES:
 CHART NAME: nginx
-CHART VERSION: 18.3.1
-APP VERSION: 1.27.3
+CHART VERSION: 19.1.1
+APP VERSION: 1.27.5
 ...
 ```
 ### Check release
 
-Check that release `internal-issue-report-apiv2` change from version `18.2.5` to `18.3.1`.
+Check that release `internal-issue-report-apiv2` change from version `18.2.5` to `19.1.1`.
 
 ```shell
 helm -n mercury ls
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-internal-issue-report-apiv2     mercury         2               2024-12-13 10:26:26.022928089 -0500 -05 deployed        nginx-18.3.1    1.27.3     
-internal-issue-report-apiv3     mercury         1               2024-12-13 10:13:15.645517385 -0500 -05 failed          nginx-18.2.5    1.27.2
+internal-issue-report-apiv2     mercury         2               2025-04-23 17:55:38.166311 -0500 -05    deployed        nginx-19.1.1    1.27.5     
+internal-issue-report-apiv3     mercury         1               2025-04-23 17:19:34.363498 -0500 -05    failed          nginx-18.2.5    1.27.2
 ```
 
 ## Install the release internal-issue-report-apache
 
 ### Get the Helm chart values
+
+I am using `replica` in the search because I don't know the exact name of the value.
 
 ```shell
 helm show values bitnami/apache | grep replica
@@ -96,19 +98,40 @@ replicaCount: 1
 ## @param autoscaling.maxReplicas Maximum number of Apache replicas
 ```
 
+The example shows that the default value for `replicaCount` is `1`.
+
 ```shell
 helm -n mercury install internal-issue-report-apache bitnami/apache --set replicaCount=2
 NAME: internal-issue-report-apache
-LAST DEPLOYED: Fri Dec 13 10:35:41 2024
+LAST DEPLOYED: Wed Apr 23 18:04:40 2025
 NAMESPACE: mercury
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
 CHART NAME: apache
-CHART VERSION: 11.3.0
-APP VERSION: 2.4.62
+CHART VERSION: 11.3.5
+APP VERSION: 2.4.63
 ...
+```
+
+If you get the following error:
+
+```text
+Error: INSTALLATION FAILED: failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": dial tcp: lookup auth.docker.io: i/o timeout
+```
+
+Execute the following command:
+
+```shell
+docker login -u hachikoapp
+
+Info → A Personal Access Token (PAT) can be used instead.
+         To create a PAT, visit https://app.docker.com/settings
+
+
+Password: [INTRODUCE YOUR TOKEN]
+Login Succeeded
 ```
 
 ### Check the release
@@ -118,9 +141,10 @@ Validate if release `internal-issue-report-apache` is on `deployed` state.
 ```shell
 helm -n mercury ls
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-internal-issue-report-apache    mercury         1               2024-12-13 10:35:41.416842758 -0500 -05 deployed        apache-11.3.0   2.4.62     
-internal-issue-report-apiv2     mercury         2               2024-12-13 10:26:26.022928089 -0500 -05 deployed        nginx-18.3.1    1.27.3     
-internal-issue-report-apiv3     mercury         1               2024-12-13 10:13:15.645517385 -0500 -05 failed          nginx-18.2.5    1.27.2
+NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
+internal-issue-report-apache    mercury         1               2025-04-23 18:04:40.594345 -0500 -05    deployed        apache-11.3.5   2.4.63     
+internal-issue-report-apiv2     mercury         2               2025-04-23 17:55:38.166311 -0500 -05    deployed        nginx-19.1.1    1.27.5     
+internal-issue-report-apiv3     mercury         1               2025-04-23 17:19:34.363498 -0500 -05    failed          nginx-18.2.5    1.27.2
 ```
 
 ## Find a release on failed state and delete it
@@ -149,8 +173,8 @@ release "internal-issue-report-apiv3" uninstalled
 ```shell
 helm -n mercury ls
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-internal-issue-report-apache    mercury         1               2024-12-13 10:35:41.416842758 -0500 -05 deployed        apache-11.3.0   2.4.62     
-internal-issue-report-apiv2     mercury         2               2024-12-13 10:26:26.022928089 -0500 -05 deployed        nginx-18.3.1    1.27.3
+internal-issue-report-apache    mercury         1               2025-04-23 18:04:40.594345 -0500 -05    deployed        apache-11.3.5   2.4.63     
+internal-issue-report-apiv2     mercury         2               2025-04-23 17:55:38.166311 -0500 -05    deployed        nginx-19.1.1    1.27.5
 ```
 
 ## Resources
