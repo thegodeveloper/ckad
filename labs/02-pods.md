@@ -50,12 +50,6 @@ NAME   READY   STATUS    RESTARTS   AGE
 pod1   1/1     Running   0          40s
 ```
 
-### Get the Pod container name
-
-```shell
-kubectl get pod pod1 -o jsonpath='{.spec.containers[0].name}'
-```
-
 ## Write the command to show the pod1-container status
 
 ### Option 1
