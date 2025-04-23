@@ -101,6 +101,20 @@ kubectl -n neptune get pod nep-new-job-2fcvj -o jsonpath='{.spec.containers[0].n
 nep-new-job-container
 ```
 
+## Validate the Job Configuration
+
+To validate the Job configuration and its parameters, you can use the following command:
+
+```shell
+k -n neptune describe job nep-new-job | grep -A5 Parallelism
+Parallelism:      2
+Completions:      3
+Completion Mode:  NonIndexed
+Suspend:          false
+Backoff Limit:    6
+Start Time:       Wed, 23 Apr 2025 17:37:21 -0500
+```
+
 ## Resources
 
 - [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
