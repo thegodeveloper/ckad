@@ -14,21 +14,57 @@
 ```shell
 k get ns
 NAME                 STATUS   AGE
-default              Active   43m
-ingress-nginx        Active   42m
-kube-node-lease      Active   43m
-kube-public          Active   43m
-kube-system          Active   43m
-local-path-storage   Active   43m
-mercury              Active   41m
-metallb-system       Active   42m
-neptune              Active   41m
+default              Active   2m30s
+earth                Active   68s
+ingress-nginx        Active   100s
+jupiter              Active   68s
+kube-node-lease      Active   2m30s
+kube-public          Active   2m30s
+kube-system          Active   2m30s
+local-path-storage   Active   2m26s
+mars                 Active   68s
+mercury              Active   85s
+metallb-system       Active   2m12s
+moon                 Active   68s
+neptune              Active   85s
+pluto                Active   68s
+project-snake        Active   67s
+saturn               Active   68s
+sun                  Active   67s
+venus                Active   67s
 ```
 
 ### List all the namespaces into namespaces.txt file
 
 ```shell
-k get ns > namespaces.txt
+k get ns -o name > namespaces.txt
+```
+
+### Verify the file
+
+```shell
+cat namespaces.txt
+```
+
+```text
+namespace/default
+namespace/earth
+namespace/ingress-nginx
+namespace/jupiter
+namespace/kube-node-lease
+namespace/kube-public
+namespace/kube-system
+namespace/local-path-storage
+namespace/mars
+namespace/mercury
+namespace/metallb-system
+namespace/moon
+namespace/neptune
+namespace/pluto
+namespace/project-snake
+namespace/saturn
+namespace/sun
+namespace/venus
 ```
 
 ## Resources
