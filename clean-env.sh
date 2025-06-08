@@ -1,15 +1,21 @@
 #!/bin/zsh
 
-# Lab 01
+# lab 01
 rm -rf namespaces.txt
 
-# Lab 02
+# lab 02
 rm -rf 2.yaml
 rm -rf pod1-status-command.sh
 
-# Lab 03
+# lab 03
 rm -rf 3.yaml
 
-# Lab 05
+# lab 05
 rm -rf token.txt
 
+# lab 09
+rm -rf 9.yaml
+
+# lab 10
+rm -rf service_test.html
+rm -rf service_test.log
