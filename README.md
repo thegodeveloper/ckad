@@ -133,6 +133,8 @@ venus                Active   60m
 
 ## Cheat-Sheets
 
+Practice the `Cheat Sheet` the day before the exam.
+
 - [Cheat Sheet](cheat_sheet.md)
 - [Tmux Cheat Sheet](tmux_cheat_sheet.md)
 
