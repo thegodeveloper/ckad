@@ -22,6 +22,35 @@ The following was tested on the following machines and operating systems:
 - The Certified Kubernetes Application Developer (CKAD) exam has 19 performance-based questions. 
 - The exam is two hours long and is entirely command line based.
 
+## Requirement for Podman in Pop OS
+
+If you get the following error message for each `podman` command:
+
+```shell
+podman info
+Error: command required for rootless mode with multiple IDs: exec: "newuidmap": executable file not found in $PATH
+```
+
+Install the `uidmap` package:
+
+```shell
+sudo apt install uidmap -y
+```
+
+Then run the `podman info` command, you should see the output:
+
+```shell
+host:
+  arch: amd64
+  buildahVersion: 1.40.1
+  cgroupControllers:
+  - memory
+  - pids
+  cgroupManager: systemd
+  cgroupVersion: v2
+...
+```
+
 ## Environment Configuration
 
 ```shell
