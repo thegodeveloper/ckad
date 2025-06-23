@@ -4,7 +4,8 @@ The following was tested on the following machines and operating systems:
 
 - MacBook Pro M3 64GB
 - Huawei D15 Matebook 16GB with Debian 12 ★
-- Minisforum Ryzen 9 64GB with Arch Linux
+- MinisForum Ryzen 7 64GB with Arch Linux
+- MinisForum Ryzen 7 64GB with Pop OS
 
 ## Requirements
 
@@ -74,6 +75,31 @@ NAME                   STATUS   ROLES           AGE     VERSION
 k8s-c1-control-plane   Ready    control-plane   3m39s   v1.32.0
 k8s-c1-worker          Ready    <none>          3m23s   v1.32.0
 k8s-c1-worker2         Ready    <none>          3m23s   v1.32.0
+```
+
+### Check cluster namespaces
+
+```shell
+kubectl get namspaces
+NAME                 STATUS   AGE
+default              Active   62m
+earth                Active   60m
+ingress-nginx        Active   61m
+jupiter              Active   60m
+kube-node-lease      Active   62m
+kube-public          Active   62m
+kube-system          Active   62m
+local-path-storage   Active   62m
+mars                 Active   60m
+mercury              Active   61m
+metallb-system       Active   62m
+moon                 Active   60m
+neptune              Active   61m
+pluto                Active   60m
+project-snake        Active   60m
+saturn               Active   60m
+sun                  Active   60m
+venus                Active   60m
 ```
 
 ## Cheat-Sheets
