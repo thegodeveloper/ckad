@@ -6,6 +6,7 @@ The following was tested on the following machines and operating systems:
 - Huawei D15 Matebook 16GB with Debian 12 ★
 - MinisForum Ryzen 7 64GB with Arch Linux
 - MinisForum Ryzen 7 64GB with Pop OS
+- Lenovo ThinkPad E16 Gen 2
 
 ## Requirements
 
