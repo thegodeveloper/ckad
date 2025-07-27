@@ -96,6 +96,7 @@ Readiness:      exec [sh -c cat /tmp/ready] delay=5s timeout=1s period=10s #succ
 
 - [Define a liveness command](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-liveness-command)
 - [Define a readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes)
+- [Configure probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes)
 
 **Note:**
 
