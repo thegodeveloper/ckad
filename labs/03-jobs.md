@@ -115,6 +115,18 @@ Backoff Limit:    6
 Start Time:       Wed, 23 Apr 2025 17:37:21 -0500
 ```
 
+## How to identify the Pods that belongs to a Job
+
+** Remember the selector `--selector=batch.kubernetes.io/job-name=JOB_NAME`.
+
+```shell
+k get pods --selector=batch.kubernetes.io/job-name=nep-new-job -n neptune
+NAME                READY   STATUS      RESTARTS   AGE
+nep-new-job-j9d4v   0/1     Completed   0          8m41s
+nep-new-job-mzgr2   0/1     Completed   0          8m23s
+nep-new-job-tlrr8   0/1     Completed   0          8m41s
+```
+
 ## Resources
 
 - [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
