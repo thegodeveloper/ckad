@@ -77,6 +77,15 @@ source <(kubectl completion zsh)
 source ~/.zshrc
 ```
 
+The auto-completion should work with the `k` alias for `kubectl`. So, with the CKAD simulator deployed, if you run `k get ns s` and press `TAB`, you should see the following output:
+
+```shell
+ k get ns s
+ saturn  sun
+```
+
+This command is listing all the `namespaces` that start with `s` and if you write `su` and press `TAB` key, it should auto complete to `sun`, because there are no more namespaces that start with `su`, there is only one match.
+
 ## Environment Configuration
 
 ```shell
