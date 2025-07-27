@@ -52,6 +52,31 @@ host:
 ...
 ```
 
+## Configure auto-complete for kubectl
+
+### Install the package in Pop OS
+
+```shell
+sudo apt install fd-find
+```
+
+### Configure .zshrc file
+
+```shell
+alias fd="fdfind"
+
+autoload -Uz compinit
+compinit
+
+source <(kubectl completion zsh)
+```
+
+### Source the .zshrc file
+
+```shell
+source ~/.zshrc
+```
+
 ## Environment Configuration
 
 ```shell
