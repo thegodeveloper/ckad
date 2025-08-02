@@ -17,6 +17,7 @@ The following was tested on the following machines and operating systems:
 - kubernetes-cli (brew)
 - kubectx (brew)
 - Helm (brew)
+- jq (brew)
 
 ## CKAD Notes
 
