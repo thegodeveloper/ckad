@@ -24,7 +24,7 @@ The following was tested on the following machines and operating systems:
 - The Certified Kubernetes Application Developer (CKAD) exam has 19 performance-based questions. 
 - The exam is two hours long and is entirely command line based.
 
-## Requirement for Podman in Pop OS
+## Requirement for Podman in Debian and Pop OS
 
 If you get the following error message for each `podman` command:
 
