@@ -11,10 +11,10 @@ The following was tested on the following machines and operating systems:
 ## Requirements
 
 - Docker Engine
+- kubernetes-cli (brew)
 - Kind (brew)
 - Podman (brew)
 - podman-compose (brew)
-- kubernetes-cli (brew)
 - kubectx (brew)
 - Helm (brew)
 - jq (brew)
